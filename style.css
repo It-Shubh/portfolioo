@@ -1,0 +1,199 @@
+html { scroll-behavior: smooth; }
+
+:root {
+  --bg: #0b0b0b;
+  --card: #111;
+  --accent: #00d1ff;
+  --muted: #9aa0a6;
+  --radius: 12px;
+  --font: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #fff;
+  font-family: var(--font);
+  line-height: 1.5;
+}
+
+.container { max-width: 1000px; margin: auto; padding: 20px; }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: var(--muted);
+  margin-left: 15px;
+  text-decoration: none;
+  font-weight: 500;
+}
+nav a:hover { color: var(--accent); }
+
+.logo { color: var(--accent); font-size: 1.5rem; }
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+.hero-left { flex: 1 1 55%; }
+.hero-right { flex: 1 1 40%; display: flex; justify-content: center; }
+
+.profile-img {
+  width: 260px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(0, 209, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 35px rgba(0, 209, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+  .hero { flex-direction: column-reverse; text-align: center; }
+  .hero-left, .hero-right { flex: 1 1 100%; }
+  .profile-img { width: 220px; height: 300px; }
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+.btn:hover { background: var(--accent); color: #000; }
+.btn.secondary { background: var(--accent); color: #000; }
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  margin-top: 30px;
+}
+
+/* 🌟 ABOUT SECTION SPECIAL GLOW */
+#about {
+  position: relative;
+  border: 1px solid rgba(0, 209, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 209, 255, 0.15);
+  transition: box-shadow 0.5s ease;
+  overflow: hidden;
+}
+
+#about:hover {
+  box-shadow: 0 0 30px rgba(0, 209, 255, 0.4);
+}
+
+#about h2 {
+  text-shadow: 0 0 10px rgba(0, 209, 255, 0.7);
+  animation: glowPulse 2.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { text-shadow: 0 0 8px rgba(0, 209, 255, 0.4); }
+  to { text-shadow: 0 0 20px rgba(0, 209, 255, 0.9); }
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.skill {
+  background: #1a1a1a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: var(--muted);
+  border: 1px solid rgba(0, 209, 255, 0.3);
+  transition: 0.3s ease;
+}
+.skill:hover {
+  color: #fff;
+  box-shadow: 0 0 12px rgba(0, 209, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.project {
+  background: #1a1a1a;
+  padding: 16px;
+  border-radius: var(--radius);
+  transition: 0.3s ease;
+}
+.project:hover {
+  box-shadow: 0 0 20px rgba(0, 209, 255, 0.4);
+  transform: translateY(-5px);
+}
+
+.contact-card {
+  background: linear-gradient(145deg, #101010, #0d0d0d);
+  box-shadow: 0 0 20px rgba(0, 209, 255, 0.2);
+  animation: bounceIn 1.2s ease;
+}
+@keyframes bounceIn {
+  0% { transform: translateY(100px); opacity: 0; }
+  60% { transform: translateY(-15px); opacity: 1; }
+  80% { transform: translateY(5px); }
+  100% { transform: translateY(0); }
+}
+
+label { font-weight: bold; }
+input, textarea {
+  width: 100%;
+  background: #1a1a1a;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  margin: 8px 0;
+}
+textarea { resize: vertical; }
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: var(--muted);
+}
+
+.accent { color: var(--accent); }
+
+.socials { margin-top: 15px; text-align: center; }
+.socials a {
+  color: var(--accent);
+  margin-right: 12px;
+  font-size: 1.4rem;
+  transition: 0.3s;
+}
+.socials a:hover { color: #fff; }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

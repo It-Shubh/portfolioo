@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://it-shubh.github.io/portfolio/sitemap.xml

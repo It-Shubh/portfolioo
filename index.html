@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shubh Tripathi | Web Developer Portfolio | HTML CSS JS MERN</title>
+
+  <!-- 🌐 SEO Meta Tags -->
+  <meta name="description" content="Official Portfolio of Shubh Tripathi — Web Developer from Lucknow skilled in HTML, CSS, JavaScript, Java, C, and MongoDB. Explore modern, responsive web projects.">
+  <meta name="keywords" content="Shubh Tripathi, Portfolio, Web Developer, HTML, CSS, JavaScript, MERN Stack, Lucknow, Frontend Developer, Java, C, MongoDB, GitHub Portfolio">
+  <meta name="author" content="Shubh Tripathi">
+
+  <!-- 🌐 Open Graph / Facebook -->
+  <meta property="og:title" content="Shubh Tripathi | Web Developer Portfolio">
+  <meta property="og:description" content="Explore my responsive web projects, skills, and development work built using HTML, CSS, JS, and MongoDB.">
+  <meta property="og:image" content="Portfolio_img.jpeg">
+  <meta property="og:url" content="https://it-shubh.github.io/portfolio/">
+  <meta property="og:type" content="website">
+
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shubh Tripathi | Web Developer Portfolio">
+  <meta name="twitter:description" content="Explore modern, responsive projects built by Shubh Tripathi using HTML, CSS, and JavaScript.">
+  <meta name="twitter:image" content="Portfolio_img.jpeg">
+
+  <!-- 📱 Icons + Fonts -->
+  <link rel="icon" href="Portfolio_img.jpeg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header>
+      <div class="brand">
+        <div class="logo"><i class="fa-solid fa-code"></i></div>
+        <div>
+          <div class="name">Shubh Tripathi</div>
+          <div class="title">Web Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero reveal" data-aos="fade-up">
+        <div class="hero-left">
+          <h1>Hi, I'm <span class="accent">Shubh Tripathi</span></h1>
+          <p class="tagline">I build modern, responsive websites and web apps.</p>
+          <div class="cta">
+            <a class="btn" href="#projects"><i class="fa-solid fa-eye"></i> View Projects</a>
+            <a class="btn secondary" href="Shubh_Resume.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="Portfolio_img.jpeg" alt="Shubh Tripathi Web Developer" class="profile-img zoomable">
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about" class="card reveal zoomable" data-aos="fade-up">
+        <h2><i class="fa-solid fa-user"></i> About Me</h2>
+        <p>I’m a passionate Web Developer skilled in both front-end and back-end technologies. I love turning ideas into beautiful and functional digital experiences.</p>
+        <div class="skills">
+          <a href="html.html" class="skill">HTML</a>
+          <a href="css.html" class="skill">CSS</a>
+          <a href="javascript.html" class="skill">JavaScript</a>
+          <a href="java.html" class="skill">Java</a>
+          <a href="c.html" class="skill">C</a>
+          <a href="mongodb.html" class="skill">MongoDB</a>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects" class="card reveal" data-aos="fade-up">
+        <h2><i class="fa-solid fa-laptop-code"></i> Projects</h2>
+        <div class="projects-grid">
+          <div class="project">
+            <h3>Tic Tac Toe Game</h3>
+            <p>A fun 2-player Tic Tac Toe game built with HTML, CSS, and JavaScript.</p>
+            <a class="btn" href="https://it-shubh.github.io/tic-tac-toe/" target="_blank"><i class="fa-solid fa-link"></i> Live</a>
+          </div>
+          <div class="project">
+            <h3>Simple Calculator</h3>
+            <p>A responsive calculator that performs basic arithmetic operations using JavaScript.</p>
+            <a class="btn" href="https://it-shubh.github.io/calculatoor/" target="_blank"><i class="fa-solid fa-link"></i> Live</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="card contact-card reveal" data-aos="fade-up">
+        <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
+        <p>Want to collaborate? Send me a message or connect on LinkedIn.</p>
+        <form id="contactForm" action="https://formspree.io/f/mpqjbrrz" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit" class="btn secondary"><i class="fa-solid fa-paper-plane"></i> Send</button>
+          <div id="formStatus"></div>
+        </form>
+        <div class="socials">
+          <a href="mailto:sstripathi500@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/shubhsandeeptripathi" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/shubhstripathi" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/It-Shubh" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="year"></span> Shubh Tripathi | Built with ❤️ using HTML, CSS & JS</footer>
+  </div>
+
+  <!-- JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+  <script>AOS.init({duration:1000,once:true});document.getElementById("year").textContent=new Date().getFullYear();</script>
+</body>
+</html>
