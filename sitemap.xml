@@ -1,10 +1,23 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://it-shubh.github.io/portfolio/</loc></url>
-  <url><loc>https://it-shubh.github.io/portfolio/html.html</loc></url>
-  <url><loc>https://it-shubh.github.io/portfolio/css.html</loc></url>
-  <url><loc>https://it-shubh.github.io/portfolio/javascript.html</loc></url>
-  <url><loc>https://it-shubh.github.io/portfolio/java.html</loc></url>
-  <url><loc>https://it-shubh.github.io/portfolio/c.html</loc></url>
-  <url><loc>https://it-shubh.github.io/portfolio/mongodb.html</loc></url>
+  <url>
+    <loc>https://it-shubh.github.io/portfolioo/</loc>
+  </url>
+  <url>
+    <loc>https://it-shubh.github.io/portfolioo/html.html</loc>
+  </url>
+  <url>
+    <loc>https://it-shubh.github.io/portfolioo/css.html</loc>
+  </url>
+  <url>
+    <loc>https://it-shubh.github.io/portfolioo/javascript.html</loc>
+  </url>
+  <url>
+    <loc>https://it-shubh.github.io/portfolioo/java.html</loc>
+  </url>
+  <url>
+    <loc>https://it-shubh.github.io/portfolioo/c.html</loc>
+  </url>
+  <url>
+    <loc>https://it-shubh.github.io/portfolioo/mongodb.html</loc>
+  </url>
 </urlset>
